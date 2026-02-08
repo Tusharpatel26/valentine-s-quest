@@ -46,19 +46,16 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="animate-bounce text-6xl mb-3">🎉</div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3">YAY!!! </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-sm mb-2">
-            I'll book the place,
-          </p>
-          <p className="text-base sm:text-lg font-semibold text-primary mb-8">
-            (NOT HARDROCK CAFE TRUST) 😏
-          </p>
+          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3">LFGGG </h1>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-sm mb-2">I'll book a table</p>
+          <p className="text-base sm:text-lg font-semibold text-primary mb-8">(NOT HARDROCK CAFE TRUST) </p>
 
           {/* Date Reveal */}
           <div className={`w-full max-w-sm transition-all duration-1000 ease-out ${showDateReveal ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="bg-card/70 backdrop-blur-sm rounded-3xl p-6 shadow-xl border border-primary/15 mb-6">
-              <div className="text-3xl mb-2">🎁</div>
+              <div className="text-3xl mb-2">
+            </div>
               <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
                 Our Valentine's Date Plan
               </h2>
