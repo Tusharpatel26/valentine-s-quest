@@ -3,7 +3,7 @@ import FloatingHobbies from "@/components/FloatingHobbies";
 import FloatingHearts from "@/components/FloatingHearts";
 import CelebrationEffects from "@/components/CelebrationEffects";
 import Countdown from "@/components/Countdown";
-const ESCAPE_TEXTS = ["No 😢", "Are you sure? 🥺", "Really sure?? 😭", "Think again... 💔", "Keep Trying 🥹"];
+const ESCAPE_TEXTS = ["No", "Are you sure?", "Really sure??", "Think again", "Keep Trying"];
 const YES_GROWING = [1, 1.05, 1.12, 1.2, 1.3];
 const Index = () => {
   const [noAttempts, setNoAttempts] = useState(0);
@@ -39,10 +39,12 @@ const Index = () => {
         <div className="flex flex-col items-center justify-center min-h-screen p-6 text-center relative z-10">
           {/* Photo with glowing heart frame */}
           <div className="relative mb-6 animate-[scale-in_0.6s_ease-out]">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full border-4 border-dashed border-primary/40 flex items-center justify-center bg-card/60 backdrop-blur-sm shadow-lg glow-frame">
-              <span className="text-muted-foreground text-sm text-center px-4">
-                Add your photo here 📸
-              </span>
+            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full border-4 border-dashed border-primary/40 overflow-hidden bg-card/60 backdrop-blur-sm shadow-lg glow-frame">
+              <img 
+                src="/secondpic.png" 
+                alt="Us" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -66,9 +68,7 @@ const Index = () => {
           </div>
 
           <div className="mt-6 text-4xl flex gap-2">
-            {"💖💝💗💘💓".split("").map((e, i) => <span key={i} className="inline-block" style={{
-            animation: `float 2s ease-in-out ${i * 0.2}s infinite`
-          }}>
+            {"i love you <3".split("").map((e, i) => <span key={i} className="inline-block" >
                 {e}
               </span>)}
           </div>
@@ -85,16 +85,18 @@ const Index = () => {
         {/* Question */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center mb-6 leading-tight">
           Will you be my{" "}
-          <span className="text-primary">Valentine</span>? 💕
+          <span className="text-primary">Valentine</span>?
         </h1>
 
         {/* Photo placeholder */}
-        <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden mb-8 shadow-lg border-4 border-dashed border-primary/30 flex items-center justify-center bg-card/50 backdrop-blur-sm" style={{
+        <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden mb-8 shadow-lg border-4 border-dashed border-primary/30 bg-card/50 backdrop-blur-sm" style={{
         animation: "float 3s ease-in-out infinite"
       }}>
-          <span className="text-muted-foreground text-sm text-center px-4">
-            Add your photo here 📸
-          </span>
+          <img 
+            src="/mainpic.png" 
+            alt="Us" 
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Buttons */}
@@ -103,7 +105,7 @@ const Index = () => {
           animation: "heartbeat 1.5s ease-in-out infinite",
           transform: `scale(${yesScale})`
         }}>
-            Yes 😍
+            Yes
           </button>
 
           {/* No button - either in flow or escaped */}

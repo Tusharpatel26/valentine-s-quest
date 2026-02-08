@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-const TARGET = new Date("2025-02-14T00:00:00+05:30").getTime();
+const TARGET = new Date("2026-02-14T00:00:00+05:30").getTime();
 const Countdown = () => {
   const [now, setNow] = useState(Date.now());
   useEffect(() => {
@@ -31,7 +31,7 @@ const Countdown = () => {
     value: secs
   }];
   return <div className="text-center">
-      <p className="text-lg font-semibold text-muted-foreground mb-3">Countdown to Valentine's Day 💕</p>
+      <p className="text-lg font-semibold text-muted-foreground mb-3">cant wait</p>
       <div className="flex gap-3 justify-center">
         {units.map(u => <div key={u.label} className="bg-card/80 backdrop-blur-sm rounded-2xl px-4 py-3 min-w-[70px] shadow-md border border-primary/10">
             <div className="text-2xl sm:text-3xl font-bold text-primary tabular-nums">
