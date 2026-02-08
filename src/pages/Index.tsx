@@ -41,7 +41,7 @@ const Index = () => {
           <div className="relative mb-6 animate-[scale-in_0.6s_ease-out]">
             <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full border-4 border-dashed border-primary/40 overflow-hidden bg-card/60 backdrop-blur-sm shadow-lg glow-frame">
               <img 
-                src="/secondpic.png" 
+                src="secondpic.png" 
                 alt="Us" 
                 className="w-full h-full object-cover"
               />
@@ -93,7 +93,7 @@ const Index = () => {
         animation: "float 3s ease-in-out infinite"
       }}>
           <img 
-            src="/mainpic.png" 
+            src="mainpic.png" 
             alt="Us" 
             className="w-full h-full object-cover"
           />
