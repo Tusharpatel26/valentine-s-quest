@@ -3,7 +3,7 @@ import FloatingHobbies from "@/components/FloatingHobbies";
 import FloatingHearts from "@/components/FloatingHearts";
 import CelebrationEffects from "@/components/CelebrationEffects";
 import Countdown from "@/components/Countdown";
-const ESCAPE_TEXTS = ["No", "Are you sure?", "Really sure??", "Think again", "Keep Trying"];
+const ESCAPE_TEXTS = ["No", "Are you sure?", "Really sure??", "Think again", "Keep Trying", "LMFAO", "Arey yaaaar", "AHAHAHAHAHAHAHA", "YES"];
 const YES_GROWING = [1, 1.05, 1.12, 1.2, 1.3];
 const Index = () => {
   const [noAttempts, setNoAttempts] = useState(0);
@@ -74,7 +74,7 @@ const Index = () => {
           </div>
         </div>
 
-        <footer className="text-center pb-6 text-xs text-muted-foreground/60 relative z-10">Made with love and a bit of AI by Tushar </footer>
+        <footer className="text-center pb-6 text-xs text-muted-foreground/60 relative z-10">Made with love and a bit of AI by Tushar</footer>
       </div>;
   }
   return <div ref={containerRef} className="fixed inset-0 flex flex-col items-center justify-center p-6">
@@ -84,7 +84,7 @@ const Index = () => {
       <div className="flex flex-col items-center max-w-md w-full relative z-10">
         {/* Question */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center mb-6 leading-tight">
-          Will you be my{" "}
+          Shreya yadav will you be my{" "}
           <span className="text-primary">Valentine</span>?
         </h1>
 

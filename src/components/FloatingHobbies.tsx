@@ -11,7 +11,6 @@ const HOBBY_ITEMS = [
   { emoji: "🎾", label: "Shuttlecock" },
   { emoji: "🌍", label: "Explore" },
   { emoji: "🍬", label: "KinderJoy" },
-  { emoji: "🥜", label: "Bhujiya" },
 ];
 
 interface FloatingHobbiesProps {
