@@ -123,9 +123,7 @@ const Index = () => {
           {ESCAPE_TEXTS[noAttempts]}
         </button>}
 
-      <footer className="fixed bottom-4 text-xs text-muted-foreground/50">
-        Made with love and a bit of AI by Tushar 💌
-      </footer>
+      <footer className="fixed bottom-4 text-xs text-muted-foreground/50">Made with love and a bit of AI by Tushar </footer>
     </div>;
 };
 export default Index;
